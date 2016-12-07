@@ -48,6 +48,7 @@ ExpiresByType application/xhtml+xml "access plus 600 seconds"
   </FilesMatch>
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
+ ExpiresDefault https://nikrazumkov.github.io/js/libs.js "access plus 1 year"
   
 </ifModule>
 
