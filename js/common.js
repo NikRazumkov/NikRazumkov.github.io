@@ -104,8 +104,6 @@ $(function() {
 		mainClass: 'my-mfp-slide-bottom'
 	});
 
-	$("a[href=#callback]").click(function(){
-		$("#callback .formname").val($(this).data("form"))
-	})
+
 
 });
