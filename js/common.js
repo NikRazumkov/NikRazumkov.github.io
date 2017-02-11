@@ -26,5 +26,6 @@ $(function() {
 	});
 
 	$(".news-text").equalHeights();
+	$(".news").equalHeights();
 
 });
