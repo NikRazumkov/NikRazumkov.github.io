@@ -25,4 +25,6 @@ $(function() {
 		return false;
 	});
 
+	$(".news-text").equalHeights();
+
 });
