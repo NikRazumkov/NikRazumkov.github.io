@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Мебель для спальни  от KorolMebel</title>
+	<title>Заголовок</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
 
 	<meta property="og:image" content="path/to/image.jpg">
 
-	<link rel="shortcut icon" href="img/favicon/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
@@ -26,7 +26,6 @@
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
-
 
 	<!-- Load CSS Start -->
 	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
@@ -44,242 +43,992 @@
 
 <body>
 
-	
-
-	<header class="main-head" >
-		<div class="loader">
-			<div class="loaderInner"></div>
-		</div>
-		
-		<div class="top-line" >
+	<header>
+		<!-- begin top-line -->
+		<div class="top-line">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-1 col-xs-2">
-						<a href="index.html" class="logo"><img src="img/logo2.svg" alt="alt"></a>
-					</div>
-					<div class="col-md-3 col-md-push-8 col-xs-10">
-
-						<div class="phone-wrap">
-						
-							<div class="phone">+375 (29)154-01-60<br>
-								<span>&nbsp WatsApp</span> <img src="img/WhatsApp-icon.png" alt="">	
-								<span>&nbsp Viber</span> <img src="img/viber-icon.png" alt=""><br>		 
-								<span>korolmebel@bk.ru</span>	
-								
-							 </div>
-							<div class="mobile-mnu hidden-lg hidden-md">
-								<a href="#" class="toggle-mnu"><span></span></a>
-							</div>			
+					<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+						<!-- begin logo -->
+						<div class="logo">
+							<img src="img/logo.png" alt="logo">
 						</div>
-					</div>
-					<div class="col-md-8 col-md-pull-3">
+						<!-- end logo -->
+					</div> 	
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+						<!-- begin city -->
+						<div class="city">
+							Ваш город:<br>
+							<label>
+								<select>
+									<option value="г. Москва">г. Москва</option>
+									<option value="г. Минск">г. Минск</option>
+									<option value="г. Минск">г. Воронеж</option>
+									<option value="г. Минск">г. Омск</option>
+									<option value="г. Минск">г. Питер</option>
+									<option value="г. Минск">г. Киев</option>
+									<option value="г. Минск">г. Осло</option>
+								</select>
+									
+							</label>
 							
-						<nav class="top-mnu">
-							<ul class="sf-menu">
-								<li class="current-menu-item active"><a href="index.html">Главная</a></li>
-								<li><a href="#">Каталог<i class="fa fa-caret-down hidden-sm hidden-xs"></i></a>
-									<ul>
-										<li><a href="bedrooms.html">Спальня</a>	</li>
-										<li><a href="keepingrooms.html">Гостиная</a></li>
-										<li><a href="dinnerzone.html">Обеденная зона</a></li>
-										<li><a href="study.html">Рабочий кабинет</a></li>
-										<li><a href="allmebel.html">Вся  мебель</a></li>
-										
-									</ul>
-								</li>
-								<li><a href="info.html">Оплата и доставка</a></li>
-								<li><a href="dealer.html">Сотрудничество</a></li>
-												
-							</ul>
-						</nav>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 ">
-						<div class="cont-text">
-							<h1>Элитная мебель из Китая</h1>
-								
 						</div>
-						<div class="top-button">
-							<a href="#callback" class="button button-small popup-with-move-anim" data-form="Верхняя форма">Сделать заявку</a>
+						<!-- end city -->
+					</div>
+					<div class="col-lg-4 col-md-3 col-sm-5 col-xs-12">
+						<!-- begin text -->
+						<div class="top-header">
+							<h2>Только профессионалы</h2>
+						</div>
+						<!-- end text -->
+					</div>
+					<div class="buttons">
+						<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+							<!-- begin button top-button-1 -->
+							<button class="btn top-button-1">
+								<a href="#"  data-form="Сделать заказ верхний">Сделать заказ</a>
+							</button>
+							<!-- end button top-button-1 -->
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+							<!-- begin button top-button-1 -->
+							<button class="btn top-button-2">
+								<a href="#"  data-form="Стать специалистом верхний">Стать специалистом</a>
+							</button>
+							<!-- end button top-button-1 -->
 						</div>
 					</div>
-				</div>	
-				
+					
 
+					
+				</div>
 			</div>
 			
 		</div>
+		<!-- end top-line -->
+		<!-- begin finders -->
+		<div class="finders" >
+			<div class="container">
+				<div class="top-img" style="background-image: url(img/top-img.png);"></div>
+				<div class="finder">
+					<div class="row">
+						<form>
+							<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+								<!-- begin finder-text -->
+								<div class="finder-text">
+									<h4>Только <br>профессионалы</h4>
+								</div>
+								<!-- end finder-text -->
+							</div>
+							<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+								<!-- begin finder-speciality -->
+								<div class="finder-specialty">
+									<label>
+										<input type="text" name="specialty" placeholder="Введите специальность или услугу" required="">
+									</label>
+								</div>
+								<!-- end finder-speciality -->
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+								<!-- begin finder-area -->
+								<div class="finder-location">
+									<label>
+										<select>
+											<option><h4>Выберите район</h4></option>
+											<option value="Центральный">Центральный</option>
+											<option value="Фрунзенский">Фрунзенский</option>
+											<option value="Центральный">Центральный</option>
+											<option value="Фрунзенский">Фрунзенский</option>
+											<option value="Центральный">Центральный</option>
+											<option value="Фрунзенский">Фрунзенский</option>
+											<option value="Центральный">Центральный</option>
+											<option value="Фрунзенский">Фрунзенский</option>
+										</select>
+									</label>
+								</div>
+								<!-- end finder-area -->
+							</div>
+							<div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+								<!-- begin finder-find -->
+								<div class="finder-find">
+									<button class="btn btn-finder">Найти</button>		
 
+								</div>
+								<!-- end finder-find -->
+							</div>
+						</form>
+					</div>
+					
+					
+				</div>
+					
+			
+			</div>
+		</div>
+		<!-- end finders -->
+		<!-- begin specialist -->
+		<div class="specialist">
+			<h1>Специалисты <span>профи персонал</span></h1>
+			<!-- begin services -->
+			<div class="services">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2 col-sm-4">
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Мастера по строительству и ремонту <span> 57096</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сантехника </a><span> 17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Электрика </a><span> 14779</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт бытовой техники </a><span> 5058</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт авто, мото, вело </a><span> 2226</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Ремонт, реставрация, сборка мебели </a><span> 2457</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт квартир </a><span> 17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт компьютерной и оргтехники</a><span>17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт разное </a><span>17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Плотники </a><span>8123</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сварщики </a><span>653</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Геодезисты </a><span>3425</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сметчики </a><span>2457</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Специалист по отоплению </a><span>1234</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Вывоз мусора </a><span>753</span>
+								</div>
+								<!-- end profession-item -->
+							</div>
+							<!-- end profession -->
+							
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Обслуживание и сервис <span> 864</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Курьеры </a><span> 974</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Уборщицы </a><span> 1342</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Грузчики </a><span> 467</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Разнорабочие </a><span> 256</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Повара </a><span> 6233</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Садовники </a><span> 4134</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сиделки</a><span>853</span>
+								</div>
+								<!-- end profession-item -->
+								
+							</div>
+							<!-- end profession -->
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Врачи <span> 8 643</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Гинекологи </a><span> 72</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Аллергологи </a><span> 218</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Семейный доктор </a><span> 178</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Педиатры </a><span> 345</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Дерматологи </a><span> 523</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Урологи </a><span> 168</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ветеринар</a><span>245</span>
+								</div>
+								<!-- end profession-item -->
+								
+							</div>
+							<!-- end profession -->
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Мастера по строительству и ремонту <span> 57096</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сантехника </a><span> 17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Электрика </a><span> 14779</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт бытовой техники </a><span> 5058</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт авто, мото, вело </a><span> 2226</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Ремонт, реставрация, сборка мебели </a><span> 2457</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт квартир </a><span> 17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт компьютерной и оргтехники</a><span>17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт разное </a><span>17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Плотники </a><span>8123</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сварщики </a><span>653</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Геодезисты </a><span>3425</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сметчики </a><span>2457</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Специалист по отоплению </a><span>1234</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Вывоз мусора </a><span>753</span>
+								</div>
+								<!-- end profession-item -->
+							</div>
+							<!-- end profession -->
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Обслуживание и сервис <span> 864</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Курьеры </a><span> 974</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Уборщицы </a><span> 1342</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Грузчики </a><span> 467</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Разнорабочие </a><span> 256</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Повара </a><span> 6233</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Садовники </a><span> 4134</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сиделки</a><span>853</span>
+								</div>
+								<!-- end profession-item -->
+								
+							</div>
+							<!-- end profession -->
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Врачи <span> 8 643</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Гинекологи </a><span> 72</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Аллергологи </a><span> 218</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Семейный доктор </a><span> 178</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Педиатры </a><span> 345</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Дерматологи </a><span> 523</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Урологи </a><span> 168</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ветеринар</a><span>245</span>
+								</div>
+								<!-- end profession-item -->
+								
+							</div>
+							<!-- end profession -->
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Мастера по строительству и ремонту <span> 57096</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сантехника </a><span> 17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Электрика </a><span> 14779</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт бытовой техники </a><span> 5058</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт авто, мото, вело </a><span> 2226</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Ремонт, реставрация, сборка мебели </a><span> 2457</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт квартир </a><span> 17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт компьютерной и оргтехники</a><span>17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ремонт разное </a><span>17280</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Плотники </a><span>8123</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сварщики </a><span>653</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Геодезисты </a><span>3425</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сметчики </a><span>2457</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Специалист по отоплению </a><span>1234</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Вывоз мусора </a><span>753</span>
+								</div>
+								<!-- end profession-item -->
+							</div>
+							<!-- end profession -->
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Обслуживание и сервис <span> 864</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Курьеры </a><span> 974</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Уборщицы </a><span> 1342</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Грузчики </a><span> 467</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Разнорабочие </a><span> 256</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Повара </a><span> 6233</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Садовники </a><span> 4134</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Сиделки</a><span>853</span>
+								</div>
+								<!-- end profession-item -->
+								
+							</div>
+							<!-- end profession -->
+							<!-- begin  profession -->
+							<div class="profession">
+								<h4>Врачи <span> 8 643</span></h4> 
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Гинекологи </a><span> 72</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Аллергологи </a><span> 218</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Семейный доктор </a><span> 178</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Педиатры </a><span> 345</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item"> 
+									<a href="#">Дерматологи </a><span> 523</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Урологи </a><span> 168</span>
+								</div>
+								<!-- end profession-item -->
+								<!-- begin profession-item -->
+								<div class="profession-item">
+									<a href="#">Ветеринар</a><span>245</span>
+								</div>
+								<!-- end profession-item -->
+								
+							</div>
+							<!-- end profession -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end services -->
+			<div class="spec">
+				<button class="btn btn-spec">
+					<a href="">Все профессионалы</a>
+				</button>		
+			</div>
+		</div>
+		<!-- end specialist -->
+	
 	</header>
-	<section class="catalog">
+	<section class="help">
 		<div class="container">
 			<div class="row">
-				<h2>Мебель для истинных ценителей</h2>
+				<h3>Как это работает?</h3>
 				<div class="col-sm-3">
-
-					<form class="callback"> 
-
-						<input name="name" type="text" class="feedback-input" placeholder="Ваше имя..." />   
-						<input name="email" type="text" class="feedback-input" placeholder="Ваш e-mail..." required=""/>
-						<textarea name="text" class="feedback-input" placeholder="Ваша заявка..." required=""></textarea>
-						<input type="submit" value="Отправить"/>
-					</form>
-				</div>
-				<div class="tills-text">
-					<div class="col-sm-9">
-						
-						 <p>Наша Классическая  мебель в современном стиле  создаёт  атмосферу  покоя, уюта и богатой роскоши. 
-					Все комплекты мебели элитных Классических спален представлены на сайте  с гарнитурами.</p>
-
-					<p>Самый популярный набор спальни, включает в себя:  кровать, шкаф, комод, прикроватные тумбочки, туалетный столик 
-					 и зеркало. Покупая элитную спальню в таком составе, вы автоматически формируете единый завершенный
-					 стиль вашей спальни.  Если вам не обязателен весь комплект спальни, то мы соберём поэлементно 
-					 по Вашему запросу. Вы вправе его разукомплектовать. Мы привезем Вам то, что Вы хотите.</p>
-
-					<p>Для каждого Классического стиля  спальни   у нас есть несколько вариантов обивок из натуральной кожи. 
-					Вы можете выбрать нейтральные золотистые , розовые или ментоловый тона спальни. 
-					Мебель изготавливается из массива каучукового дерева и МДФ цвет – слоновая кость.</p>
-
-					<p>Главным элементом  Классической спальни является кровать.
-					 Мы Вам предлагаем широкий выбор кроватей в самых модных стилях как это требует современный дизайн. </p>
-					
+					<!-- begin help-item -->
+					<div class="help-item">
+						<!-- begin help-item-icon -->
+						<div class="help-item-icon">
+							<img src="img/loop.png" alt="#">
+						</div>
+						<!-- end help-item-icon -->
+						<!-- begin help-item-text -->
+						<div class="help-item-text">
+							<span>Укажите необходимую услугу и район</span>
+						</div>
+						<!-- end help-item-text -->
 					</div>
+					<!-- end help-item -->
 				</div>
-				
+				<div class="col-sm-1">
+					<!-- begin arrow -->
+					<div class="help-arrow">
+						<img src="img/Без имени-1.png" alt="#">
+					</div>
+					<!-- end arrow -->
+				</div>
+				<div class="col-sm-4">
+					<!-- begin help-item -->
+					<div class="help-item">
+						<!-- begin help-item-icon -->
+						<div class="help-item-icon">
+							<img src="img/note.png" alt="#">
+						</div>
+						<!-- end help-item-icon -->
+						<!-- begin help-item-text -->
+						<div class="help-item-text">
+							<span>Просмотрите анкеты с отзывами<br> и отправьте заявку</span>
+						</div>
+						<!-- end help-item-text -->
+					</div>
+					<!-- end help-item -->
+				</div>
+				<div class="col-sm-1">
+					<!-- begin arrow -->
+					<div class="help-arrow">
+						<img src="img/Без имени-1.png" alt="#">
+					</div>
+					<!-- end arrow -->
+				</div>
+				<div class="col-sm-3">
+					<!-- begin help-item -->
+					<div class="help-item-last ">
+						<!-- begin help-item-icon -->
+						<div class="help-item-last-icon">
+							<img src="img/callback.png" alt="#">
+						</div>
+						<!-- end help-item-icon -->
+						<!-- begin help-item-text -->
+						<div class="help-item-text">
+							<span>Укажите необходимую услугу и район</span>
+						</div>
+						<!-- end help-item-text -->
+					</div>
+					<!-- end help-item -->
+				</div>
+
 			</div>
-			<div class="row">
-				<div class="tills">
-					<div class="col-md-4 col-sm-6">
-						<div class="till-item ">
-							<a href="bedrooms.html">
-								<img src="img/bedrooms.jpg" alt="alt">
-								<div class="till-item-content">
-									<p>Мебель для спальни</p>
-								</div>
-								
-							</a>
-						</div>
-						
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="till-item">
-							<a href="keepingrooms.html">
-								<img src="img/keepingrooms.jpg" alt="alt">
-								<div class="till-item-content">
-									<p>Мебель для гостинной</p>
-								</div>
-								
-							</a>
-						</div>
-						
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="till-item">
-							<a href="dinnerzone.html">
-								<img src="img/dinnerzone.jpg" alt="alt">
-								<div class="till-item-content">
-									<p>Мебель для обеденной зоны</p>
-								</div>
-								
-							</a>
-						</div>
-						
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="till-item">
-							<a href="study.html">
-								<img src="img/study.jpg" alt="alt">
-								<div class="till-item-content">
-									<p>Мебель для кабинета</p>
-								</div>
-								
-							</a>
-						</div>
-						
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="till-item">
-							<a href="allmebel.html">
-								<img src="img/study.jpg" alt="alt">
-								<div class="till-item-content">
-									<p>Вся мебель</p>
-								</div>
-								
-							</a>
-						</div>
-						
-					</div>
-	
-				</div>
-				
-			</div>
-
 		</div>
-		<div id="qoo-counter">
-			<a href="http://qoo.by/" title="Сервис коротких ссылок">
-			<img src="http://qoo.by/counter/standard/003.png" alt="Укоротить ссылку">
-			<div id="qoo-counter-visits"></div>
-			<div id="qoo-counter-views"></div>
-			</a>
-		</div>
-			<script type="text/javascript" src="http://qoo.by/counter.js"></script>
+		
 	</section>
-	
-	<footer>
-		<div class="footer-line" >
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2 col-xs-6">
-						<a href="#" class="logo"><img src="img/logo2.svg" alt="alt"></a>
-					</div>
-					<div class="col-sm-6   hidden-xs">
-						<div class="social"> 
-							<h2>Купи  мебель для своей души от KorolMebel.ru</h2>
-
-						 </div>	
-					</div>
-					<div class="col-sm-4   col-xs-6">
-						<div class="phone">+375 (29)154-01-60<br>
-							<span>&nbsp WatsApp</span> <img src="img/WhatsApp-icon.png" alt="">	
-							<span>&nbsp Viber</span> <img src="img/viber-icon.png" alt=""><br>		 
-							<span>korolmebel@bk.ru</span>	
+	<section class="blank">
+		<div class="container">
+			<div class="row">
+				<h3>или вы можете оставить заявку<br> и мы подберем специалиста по вашим критериям</h3>
+				<!-- begin  -->
+				<div class="blank-form">
+					<h3><span>Бесплатная</span> помощь в подборе</h3>
+					<h4>Заполните заявку и в течение 15 минут с вами свяжется администратор <br>
+					 и порекомендует профессионала по вашим критериям</h4>
+					 <!-- begin forms -->
+					<form class="forms">
+						<div class="row">
+							
 								
-						 </div>
-					</div>
-
+							<div class="col-sm-12">
+								<div class="forms-text">
+								<label>
+									<span>Кого вы ищите? Счем надо помочь?</span><br>
+									<textarea></textarea>
+								</label>
+							</div>
+							</div>
+						
+						
+							<div class="col-sm-5 col-xs-12">
+								
+							<label class="forms-name">
+								<input type="text" placeholder="Ваше имя..." name="name">
+							</label>
+						
+							</div>		
+							<div class="col-sm-3 col-xs-12">
+								<label class="forms-phone">
+									<input type="text" placeholder="Ваш телефон..." name="phone">
+								</label>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<label>
+									<button class="btn btn-form">Подобрать</button>
+								</label>
+							</div>
+							<div class="col-sm-12">
+								<h6>Отправляя заявку, вы подтверждаете ознакомление
+					  и согласие с <a href="#">Условиями использования</a> полностью.</h6> 
+							</div>	
+							
+						</div>
+						
+						
+					</fom>
+					 <!-- end  forms-->
 					
 				</div>
-			</div>				
+				<!-- end  -->
+				
+			</div>
 		</div>
-	</footer>
-		
+	</section>
+	<section class="advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<!-- begin foto -->
+					<div class="advantages-foto">
+						<img src="img/foto.png" alt="alt">
+					</div>
+					<!-- end foto -->
+				</div>
+				<div class="col-sm-7">
+					<!-- begin advantages-content -->
+					<div class="advantages-content">
+						
+						<!-- begin advantages-content-top -->
+						<div class="advantages-content-top">
+							<h1><span>Профи Персонал</span> — самый удобный  поиск по специалистам</h1>
 
-	<div class="hidden">
-		
-		<form class="popup-form callback zoom-anim-dialog" id="callback">
+						</div>
+						<!-- end advantages-content-top -->
+						
+						<div class="container">
+							<div class="row">
+								<div class="advantages-content-text">
+									<div class="col-sm-1 col-xs-2">
+										<div class="advantages-content-chek">
+											<img src="img/chek.png" alt="alt">
+										</div>
+									</div>
+									<div class="col-sm-11 col-xs-10">
+										<div class="advantages-content-txt">
+											<h4>Более 1 000 000 подлинных отзывов </h4>
+											<h5>Они помогут вам найти нужного профессионала</h5>
+										</div>
+									</div>
+								</div>
+								<div class="advantages-content-text">
+									<div class="col-sm-1 col-xs-2">
+										<div class="advantages-content-chek">
+											<img src="img/chek.png" alt="alt">
+										</div>
+									</div>
+									<div class="col-sm-11 col-xs-10">
+										<div class="advantages-content-txt">
+											<h4>PPROFI.KZ проверяет каждого специалиста:  </h4>
+											<h5>документы, опыт, отзыв</h5>
+										</div>
+									</div>
+								</div>
+								<div class="advantages-content-text">
+									<div class="col-sm-1 col-xs-2">
+										<div class="advantages-content-chek">
+											<img src="img/chek.png" alt="alt">
+										</div>
+									</div>
+									<div class="col-sm-11 col-xs-10">
+										<div class="advantages-content-txt">
+											<h4>Выбирайте сами или доверьте подбор нам  </h4>
+											<h5>Помощь PPROFI.KZ всегда бесплатна</h5>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+					<!-- end advantages-content -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="feedback">
+		<h1>Более <span>1 000 000</span> настоящих отзывов </h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="feedback-img">
+						<img src="img/foto1.png" alt="">
+						<h5 class="name">Будяк Евгения Юрьевна <br>
+							<span>Макияж</span>
+						</h5>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="feedback-text">
+						<div class="feedback-text-value">
+							<p class="value">Оценка: 5+</p>
+							<p>Вызывала Евгению для обучению аквагриму.
+							Она все объяснила, показала, рассказала.
+							Очень понравилось, спасибо огромное,
+							 было очень интересно и полезно,
+							 буду сама теперь раскрашивать своего
+							 ребенка и всех знакомых))</p>
+						</div>
+						<div class="feedback-text-client">
+							<p>Валентина <br>
+							<span>30.06.2017</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="feedback-img">
+						<img src="img/foto2.png" alt="">
+						<h5 class="name">Андрей Якиманский <br>
+							<span>Ведущий</span>
+						</h5>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="feedback-text">
+						<div class="feedback-text-value">
+							<p class="value">Оценка: 5</p>
+							<p>Оценка: 5 Добрый день! Я хочу поблагодарить
+							 Вас за удачно подобранного ведущего.
+							  Андрей и его жена Ольга прекрасно провели мой юбилей
+							  . Я и все гости остались довольны. 
+							  Было весело, звучали хорошие песни...</p>
+						</div>
+						<div class="feedback-text-client">
+							<p>Анна <br>
+							<span>12.02.2017</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="feedback-img">
+						<img src="img/foto3.png" alt="">
+						<h5 class="name">Газалиева Аида<br>
+							<span>Косметология</span>
+						</h5>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="feedback-text">
+						<div class="feedback-text-value">
+							<p class="value">Оценка: 5</p>
+							<p>Делал лимфодренажный массаж
+							у Аиды. Очень понравилось. К тому же Аида очень
+							приятный, заботливый человек. Рекомендую.</p>
+						</div>
+						<div class="feedback-text-client">
+							<p>Борис <br>
+							<span>15.01.2017</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="feedback-img">
+						<img src="img/foto4.png" alt="">
+						<h5 class="name">Ветрик Светлана Николаевна <br>
+							<span>Наращивание ногтей</span>
+						</h5>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="feedback-text">
+						<div class="feedback-text-value">
+							<p class="value">Оценка: 4</p>
+							<p>Старалась и делала все хорошо,
+							но повторно я уже не приду. Так как
+							сначала одну стоимость назвала
+							,а вконце работы другую. Качество 
+							работы тоже не на 5+ уж простите за честсность.</p>
+						</div>
+						<div class="feedback-text-client">
+							<p>Инга <br>
+							<span>27.11.2016</span></p>
+						</div>
+					</div>
+				</div>
 
-		<div class="success">Спасибо за заявку! <br>
-		Мы свяжемся с Вами в течение 10 минут.</div>	
-	
-			<input type="hidden" name="project_name" value="KorolMebel">
-			<input type="hidden" name="admin_email" value="korolmebel@bk.ru">
-			<input type="hidden" name="form_subject" value="Новая заявка с сайта КоролМебель">
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="footer-menu">
+						<ul class="">
+							<li><a href="">Помощь в подборе</a> </li>
+							<li><a href="">Все услуги</a></li>
+							<li><a href="">История заказов</a></li>
+							<li><a href="">Условия использования</a></li>
+							<li><a href="">Мобильная версия</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-menu">
+						<ul class="">
+							<li><a href="">Регистрация специалистов</a> </li>
+							<li><a href="">Партнерская программа</a></li>
+							<li><a href="">Вход в BackOffice</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-menu">
+						<ul class="">
+							<li><a href="">О компании</a> </li>
+							<li><a href="">Вакансии</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Блог</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-menu">
+						<ul >
+							<li>PROFI.KZ, 2017</li>
+							<li><br><i class="fa fa-phone" aria-hidden="true"></i> 8 495 123 45 56</li>
+							<li><i class="fa fa-envelope-o" aria-hidden="true"></i>info@pprofi.kz</li>
+							<br>
+							
+							<li class="social"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li class="social"><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li class="social"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
- 
-
-			<input name="name" type="text" class="feedback-input" placeholder="Ваше имя..." />   
-			<input name="email" type="text" class="feedback-input" placeholder="Ваш e-mail..." required=""/>
-			<textarea name="text" class="feedback-input" placeholder="Ваша заявка..." required=""></textarea>
-			<input type="submit" value="Отправить"/>
-					
-		</form>
-	</div>
+	<div class="hidden"></div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
