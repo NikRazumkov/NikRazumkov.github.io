@@ -62,31 +62,7 @@
 </head>
 
 <body>
-<input type="button" onclick="notifSet ()" value="Notification">
-<script>
-	function notifyMe () {
-		var notification = new Notification ("Все еще работаешь?", {
-			tag : "ache-mail",
-			body : "Пора сделать паузу и отдохнуть",
-			icon : "https://itproger.com/img/notify.png"
-		});
-	}
-	
-	function notifSet () {
-		if (!("Notification" in window))
-			alert ("Ваш браузер не поддерживает уведомления.");
-		else if (Notification.permission === "granted")
-			setTimeout(notifyMe, 2000);
-		else if (Notification.permission !== "denied") {
-			Notification.requestPermission (function (permission) {
-				if (!('permission' in Notification))
-					Notification.permission = permission;
-				if (permission === "granted")
-					setTimeout(notifyMe, 2000);
-			});
-		}
-	}
-</script>
+
 
 	<div class="loader">
 		<div class="loaderInner"></div>
@@ -118,6 +94,31 @@
 				<div class="top_center">
 					<div class="top_text">
 						<a href="#about">
+						<input type="button" onclick="notifSet ()" value="Notification">
+<script>
+	function notifyMe () {
+		var notification = new Notification ("Все еще работаешь?", {
+			tag : "ache-mail",
+			body : "Пора сделать паузу и отдохнуть",
+			icon : "https://itproger.com/img/notify.png"
+		});
+	}
+	
+	function notifSet () {
+		if (!("Notification" in window))
+			alert ("Ваш браузер не поддерживает уведомления.");
+		else if (Notification.permission === "granted")
+			setTimeout(notifyMe, 2000);
+		else if (Notification.permission !== "denied") {
+			Notification.requestPermission (function (permission) {
+				if (!('permission' in Notification))
+					Notification.permission = permission;
+				if (permission === "granted")
+					setTimeout(notifyMe, 2000);
+			});
+		}
+	}
+</script>
 							<h1>Nik Razumkov</h1>
 							<p>Front-End developer...</p>
 						</a>
